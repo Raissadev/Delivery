@@ -18,7 +18,7 @@
             if(isset($_GET['addCart'])){
                 $idProduto = (int)$_GET['addCart'];
                 deliveryModel::addToCart($idProduto);
-                header(INCLUDE_PATH);
+                header('Location: '.INCLUDE_PATH);
                 die();
             }
         }
