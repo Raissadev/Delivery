@@ -1,0 +1,429 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height:100%;
+    background-color: var(--myGrayWeak);
+}
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+}
+:root{
+    --myWhite:#ffffff;
+    --myBlackWeak:#333;
+    --myBlackString:#000;
+    --myGrayString:#585858;
+    --myGrayWeak:#efefef;
+    --myGrayMiddle:#e3e3e3;
+    --myGray:#d2d2d2;
+}
+input:focus,button:focus,select:focus{
+    outline: 0;
+}
+input{
+    border:0;
+    background-color: var(--myGray);
+    border-radius: 7px;
+    height: 35px;
+    padding: 0.5rem 1rem;
+    color: var(--myGrayString);
+}
+input[type=number]{
+    padding: 0.5rem;
+    background-color: var(--myWhite);
+    border:1px solid var(--myGray);
+}
+input::placeholder{
+    color: var(--myGrayString);
+}
+a.button, select{
+    background-color: var(--myBlackWeak);
+    color: var(--myWhite);
+    font-weight: 400;
+    font-size: 0.9rem;
+    border: 0;
+    border-radius: 7px;
+    padding: 0.7rem 1rem;
+    transition: all 1s;
+}
+button{
+    background-color: transparent;
+    border: 0;
+}
+svg{
+    color: var(--myBlackWeak);
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6, h3 a, h4 a{
+    font-size:1rem;
+    color: var(--myBlackWeak);
+    font-weight: 500;
+}
+h4, h4 a{
+    font-size: 0.9rem;
+}
+h5{
+    font-size: 0.8rem;
+}
+h6{
+    font-size: 0.75rem;
+}
+p{
+    color: var(--myGrayString);
+    font-size:0.75rem;
+    font-weight:500;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.textRight{
+    text-align: right;
+}
+.textCenter{
+    text-align: center;
+}
+.center{
+    margin: 0 auto;
+}
+.itemsFlex{
+    display: flex;
+}
+.alignCenter{
+    align-items: center;
+}
+.alignEnd{
+    align-items: flex-end;
+}
+.justCenter{
+    justify-content: center;
+}
+.justEnd{
+    justify-content: flex-end;
+}
+.justSpaceEvenly{
+    justify-content: space-evenly;
+}
+.justSpaceBetween{
+    justify-content: space-between;
+}
+.gridOne{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.gridTwo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.w100{
+    width: 100%;
+}
+.w95{
+    width: 95%;
+}
+.w90{
+    width: 90%;
+}
+.w80{
+    width: 80%;
+}
+.w75{
+    width: 75%;
+}
+.w70{
+    width: 70%;
+}
+.w60{
+    width: 60%;
+}
+.w50{
+    width: 50%;
+}
+.w40{
+    width: 40%;
+}
+.w30{
+    width: 30%;
+}
+.w25{
+    width: 25%;
+}
+.w20{
+    width: 20%;
+}
+.marginDownSmallIn{
+    margin-bottom: 2vh;
+}
+.marginDownSmall{
+    margin-bottom: 4vh;
+}
+.marginDownDefault{
+    margin-bottom: 5vh;
+}
+.marginDownBigger{
+    margin-bottom: 12vh;
+}
+.marginSideDefault{
+    margin:0 1rem;
+}
+.marginRightDefault{
+    margin-right: 3%;
+}
+.marginTopDefault{
+    margin-top: 5vh;
+}
+.paddinsSideDefault{
+    padding:0 3%;
+}
+.paddingRightDefault{
+    padding:0 4%;
+}
+.positionRelative{
+    position: relative;
+}
+.hide{
+    display: none;
+}
+.sliderTabs{
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+.slider{
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+.listShop{
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.limitLineClampOne{
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+/*HEADER AND FOOTER*/
+header.searchContent{
+    background-color: var(--myGrayMiddle);
+}
+header.searchContent .wrap .search{
+    height: 14vh;
+}
+header.searchContent .wrap .search i{
+    font-size: 1.1rem;
+}
+footer{
+    position: fixed;
+    bottom:0;
+    left: 0;
+}
+footer .wrap{
+    background-color: var(--myBlackWeak);
+    height: 10vh;
+    border-radius:8px 8px 0 0;
+}
+footer .wrap nav.itemsMenu ul li{
+    text-align: center;
+}
+footer .wrap nav.itemsMenu ul li a svg{
+    color: var(--myGray);
+    font-size: 1.68rem;
+    vertical-align: middle;
+}
+footer .wrap nav.itemsMenu ul li a p{
+    color: var(--myGray);
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+}
+div.divisor{
+    height: 14vh;
+}
+/*ASIDE*/
+aside.account{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 55%;
+    height: calc(100vh - 10vh);
+    background-color: var(--myGrayWeak);
+    z-index: 999;
+    box-shadow: 0 0 3px var(--myGray);
+}
+aside.account nav.menu{
+    padding: 2rem 0;
+}
+aside.account nav.menu ul li{
+    padding: 1rem;
+}
+aside.account nav.menu ul li a{
+    display: flex;
+    align-items: center;
+}
+aside.account nav.menu ul li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+aside.account nav.menu ul li span{
+    padding-left: 0.8rem;
+    color: var(--myBlackWeak);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+/*HOME*/
+section.shopContent .title .iconsBtns a{
+    margin-left:5%;
+}
+div.boxFood figure.imgProduct{
+    border-radius: 10px;
+}
+div.boxFood figure.imgProduct img{
+    height: 30vh;
+    border-radius: 10px 10px 0 0;
+}
+section.shopContent .listFoods span.bag{
+    background-color: var(--myGrayMiddle);
+    color: var(--myGrayString);
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 5%;
+    left:3%;
+    border-radius: 7px;
+}
+section.shopContent .listFoods a.favorite{
+    position: absolute;
+    top: 5%;
+    right:3%;
+}
+section.shopContent .listFoods div.boxFood{
+    box-shadow: 0px 0px 3px var(--myGrayWeak);
+}
+section.shopContent .listFoods div.boxFood div.textProduct h4 a{
+    text-transform: capitalize;
+}
+section.shopContent .listFoods div.boxFood div.textProduct{
+    background-color: var(--myWhite);
+    border-radius:0 0 10px 10px;
+    padding: 1rem;
+    margin-top: -1%;
+    position: relative;
+    z-index: 1;
+}
+section.shopContent .listFoods div.boxFood div.textProduct svg{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+/*SINGLE PRODUCT*/
+section.productContent figure.singleImg{
+    margin-bottom: -5%;
+}
+section.productContent figure.singleImg img{
+    height: 40vh;
+}
+section.productContent div.infosProduct{
+    background-color: var(--myWhite);
+    border-radius: 10px;
+    z-index: 1;
+    padding: 1rem;
+    width: 98%;
+}
+section.productContent div.infosProduct .optionsProduct p{
+    display: flex;
+    align-items: center;
+    margin: 0.55rem 0;
+}
+section.productContent div.infosProduct .optionsProduct p input{
+    margin-right: 2%;
+    height: 10px;
+    width: 10px;
+}
+section.productContent div.infosProduct .optionsProduct p span.ml{
+    text-align: right;
+    font-size: 0.78rem;
+    color: var(--myGray);
+    width: 25%;
+}
+section.addToCartContent{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+section.addToCartContent .wrap{
+    height: 12vh;
+}
+/*CART*/
+section.mapContent iframe {
+    height:100%;
+    width:100%;
+    border:0;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+}
+section.cardItems .boxFood figure img{
+    height: 15vh;
+    border-radius: 10px;
+}
+section.cardItems .boxFood .row .col:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section.cardItems .boxFood .row .col:nth-of-type(2){
+    padding: 0.8rem 0;
+}
+/*Checkout*/
+section.optionsMethods .card{
+    background-color: var(--myWhite);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px var(--myGrayWeak);
+}
+section.optionsMethods .card{
+    background-color: var(--myWhite);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px var(--myGrayWeak);
+}
+section.optionsMethods .card input{
+    background-color: var(--myWhite);
+    border:1px solid var(--myGrayWeak);
+    width: 100%;
+    margin-top: 0.5rem;
+}
+section.optionsMethods .card .row{
+    height: 5rem;
+}
+section.optionsMethods .card .row:nth-of-type(2) .col{
+    width: 49%;
+}
+/*History*/
+section.history .boxFood{
+    max-width: 48.5%;
+    min-width: 48.5%;
+}
+section.history .listFoods div.boxFood div.textProduct{
+    background-color: var(--myWhite);
+    border-radius:0 0 10px 10px;
+    padding: 1rem;
+    margin-top: -2%;
+}
