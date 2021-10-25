@@ -1,4 +1,4 @@
-# Delivery
+# Delivery de Café
 <h2>Sobre o Projeto</h2>
 <p>Delivery interativo e atraente, ele possui funcionalidades como: adicionar ao carrinho, histórico, fazer pedido... 😊</p>
 
@@ -15,6 +15,7 @@
   <li>Database: MySql</li>
 </ul>
 
+![deliveryCoffeGif](https://user-images.githubusercontent.com/82960240/138718411-064a3ecf-4ee4-42f6-8018-d1b8dfaccb9a.gif)
 
 
 <h3>Autor</h3>
