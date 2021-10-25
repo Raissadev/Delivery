@@ -15,7 +15,7 @@
   <li>Database: MySql</li>
 </ul>
 
-![deliveryCoffeGif](https://user-images.githubusercontent.com/82960240/138718411-064a3ecf-4ee4-42f6-8018-d1b8dfaccb9a.gif)
+![deliverySmallGif](https://user-images.githubusercontent.com/82960240/138720497-16b8bbac-79bf-4945-ab34-bca761654954.gif)
 
 
 <h3>Autor</h3>
