@@ -1,16 +1,19 @@
 # Delivery de Café
-<h2>Sobre o Projeto</h2>
+<h3>Sobre o Projeto</h3>
 <p>Delivery interativo e atraente, ele possui funcionalidades como: adicionar ao carrinho, histórico, fazer pedido... 😊</p>
-<h3>Front-end:</h3>
+
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JS</li>
-</ul>
-<h3>Back-end:</h3>
-<ul>
-  <li>PHP</li>
-  <li>Database: MySql</li>
+  <li>Lenguages:</li>
+  <i>PHP, JavaScript e SQL</i>
+  
+  <li>Database:</li>
+  <i>MySql</i>
+  
+  <li>Style:</li>
+  <i>Cascading Style Sheets</i>
+  
+  <li>Markup Language:</li>
+  <i>HTML</i>
 </ul>
 
 ![deliverySmallGif](https://user-images.githubusercontent.com/82960240/138720497-16b8bbac-79bf-4945-ab34-bca761654954.gif)
