@@ -1,6 +1,6 @@
 # Delivery de Café
 <h3>Sobre o Projeto</h3>
-<p>Delivery interativo e atraente, ele possui funcionalidades como: adicionar ao carrinho, histórico, fazer pedido... 😊</p>
+<p>Delivery interativo e atraente, ele possui funcionalidades como: adicionar ao carrinho, histórico, fazer pedido...</p>
 
 <ul>
   <li>Lenguages:</li>
